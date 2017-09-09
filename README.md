@@ -1,4 +1,4 @@
-GZOSP
+Validus
 ========
 
 To initialize your local repository, use this command:

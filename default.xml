@@ -533,5 +533,8 @@
   <!-- GZOSP CAF manifest -->
   <include name="caf_default.xml" />
 
+  <!-- Validus manifest -->
+  <include name="validus_default.xml" />
+
 </manifest>
 

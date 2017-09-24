@@ -5,8 +5,10 @@
            fetch="https://github.com" />
 
   <remote  name="gzosp"
-           fetch="https://github.com/GZOSP"
-            revision="8.0" />  
+           fetch="https://github.com/GZOSP" />  
+
+  <remote  name="val"
+           fetch="https://github.com/ValidusOs" />  
   
   <default revision="8.0"
            remote="val"
@@ -14,9 +16,6 @@
            sync-c="true"
            sync-j="8" />
 
-  <remote fetch="https://github.com" name="github" />
-  <remote fetch="https://github.com/GZOSP" name="gzosp" revision="8.0" />
-  <remote fetch="https://github.com/ValidusOs" name="val" revision="8.0" sync-c="true" sync-f="true" sync-j="8" />
   <project name="manifest" path="manifest" remote="val" />
   <project name="build" path="build/make" remote="val">
     <copyfile dest="Makefile" src="core/root.mk" />

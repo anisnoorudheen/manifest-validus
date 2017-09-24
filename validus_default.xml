@@ -1,77 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="github"
-           fetch="https://github.com" />
-
-  <remote  name="gzosp"
-           fetch="https://github.com/GZOSP"
-           revision="8.0" />
-
-  <remote  name="val"
-           fetch="https://github.com/ValidusOs"
-           sync-c="true"
+  <default revision="8.0"
+           remote="val"
            sync-f="true"
-           sync-j="8" 
-           revision="8.0" />
+           sync-c="true"
+           sync-j="8" />
 
-  <project path="manifest" name="manifest" remote="val" />
-  <project path="build/make" name="build" remote="val" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
+  <remote fetch="https://github.com" name="github" />
+  <remote fetch="https://github.com/GZOSP" name="gzosp" revision="8.0" />
+  <remote fetch="https://github.com/ValidusOs" name="val" revision="8.0" sync-c="true" sync-f="true" sync-j="8" />
+  <project name="manifest" path="manifest" remote="val" />
+  <project name="build" path="build/make" remote="val">
+    <copyfile dest="Makefile" src="core/root.mk" />
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk" />
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default" />
+    <linkfile dest="build/core" src="core" />
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh" />
+    <linkfile dest="build/target" src="target" />
+    <linkfile dest="build/tools" src="tools" />
   </project>
-  <project path="build/kati" name="build_kati" groups="pdk,tradefed" remote="val" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="val" >
-    <linkfile src="root.bp" dest="Android.bp" />
-    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  <project groups="pdk,tradefed" name="build_kati" path="build/kati" remote="val" />
+  <project groups="pdk,tradefed" name="build_soong" path="build/soong" remote="val">
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
-  <project path="bionic" name="bionic" groups="pdk" remote="val" />
-  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="val" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="val" />
-  <project path="packages/apps/WolvesDen" name="packages_apps_WolvesDen" remote="val" />
-  <project path="system/core" name="system_core" groups="pdk" remote="val" />
-  <project path="vendor/validus" name="vendor_validus" remote="val" />
-
-  <!-- GZOSP -->
-  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="gzosp" />
-  <project path="device/gzosp/sepolicy" name="device_gzosp_sepolicy" remote="gzosp" />
-  <project path="external/connectivity" name="external_connectivity" groups="pdk" remote="gzosp" />
-  <project path="external/ebtables" name="external_ebtables" groups="pdk" remote="gzosp" />
-  <project path="external/exfat" name="external_exfat" remote="gzosp" />
-  <project path="external/fuse" name="external_fuse" remote="gzosp" />
-  <project path="external/htop" name="external_htop" remote="gzosp" />
-  <project path="external/json-c" name="external_json-c" remote="gzosp" />
-  <project path="external/libncurses" name="external_libncurses" remote="gzosp" />
-  <project path="external/libnfc-nxp" name="external_libnfc-nxp" remote="gzosp" />
-  <project path="external/mksh" name="external_mksh" groups="pdk" remote="gzosp" />
-  <project path="external/nano" name="external_nano" remote="gzosp" />
-  <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="gzosp" />
-  <project path="external/selinux" name="external_selinux" groups="pdk" remote="gzosp" />
-  <project path="external/toybox" name="external_toybox" groups="pdk" remote="gzosp" />
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" groups="pdk" remote="gzosp" />
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="gzosp" />
-  <project path="frameworks/base" name="frameworks_base" remote="val" />
-  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="gzosp" />
-  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk" remote="gzosp" />
-  <project path="hardware/gzosp/interfaces" name="hardware_gzosp_interfaces" remote="gzosp" />
-  <project path="hardware/libhardware" name="hardware_libhardware" remote="gzosp" />
-  <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" groups="pdk" remote="gzosp" />
-  <project path="hardware/ril" name="hardware_ril" groups="pdk" remote="gzosp" />
-  <project path="packages/apps/Camera2" name="packages_apps_Camera2" groups="pdk-fs" remote="gzosp" />
-  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" groups="pdk-fs" remote="gzosp" />
-  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" groups="pdk-fs" remote="gzosp" />
-  <project path="packages/apps/Nfc" name="packages_apps_Nfc" groups="apps_nfc,pdk-fs" remote="gzosp" />
-  <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
-  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
-  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
-  <project path="system/bt" name="system_bt" groups="pdk" remote="gzosp" />
-  <project path="system/media" name="system_media" groups="pdk" remote="gzosp" />
-  <project path="system/nfc" name="system_nfc" groups="pdk" remote="gzosp" />
-  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="gzosp" />
-  <project path="system/vold" name="system_vold" groups="pdk" remote="gzosp" />
+  <project groups="pdk" name="bionic" path="bionic" remote="val" />
+  <project groups="pdk" name="hardware_interfaces" path="hardware/interfaces" remote="val" />
+  <project groups="pdk-fs" name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
+  <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />
+  <project groups="pdk" name="system_core" path="system/core" remote="val" />
+  <project name="vendor_validus" path="vendor/validus" remote="val" />
+  <project groups="pdk" name="bootable_recovery" path="bootable/recovery" remote="gzosp" />
+  <project name="device_gzosp_sepolicy" path="device/gzosp/sepolicy" remote="gzosp" />
+  <project groups="pdk" name="external_connectivity" path="external/connectivity" remote="gzosp" />
+  <project groups="pdk" name="external_ebtables" path="external/ebtables" remote="gzosp" />
+  <project name="external_exfat" path="external/exfat" remote="gzosp" />
+  <project name="external_fuse" path="external/fuse" remote="gzosp" />
+  <project name="external_htop" path="external/htop" remote="gzosp" />
+  <project name="external_json-c" path="external/json-c" remote="gzosp" />
+  <project name="external_libncurses" path="external/libncurses" remote="gzosp" />
+  <project name="external_libnfc-nxp" path="external/libnfc-nxp" remote="gzosp" />
+  <project groups="pdk" name="external_mksh" path="external/mksh" remote="gzosp" />
+  <project name="external_nano" path="external/nano" remote="gzosp" />
+  <project groups="pdk" name="external_tinycompress" path="external/tinycompress" remote="gzosp" />
+  <project groups="pdk" name="external_selinux" path="external/selinux" remote="gzosp" />
+  <project groups="pdk" name="external_toybox" path="external/toybox" remote="gzosp" />
+  <project groups="pdk" name="external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="gzosp" />
+  <project groups="pdk" name="frameworks_av" path="frameworks/av" remote="gzosp" />
+  <project name="frameworks_base" path="frameworks/base" remote="val" />
+  <project groups="pdk" name="frameworks_native" path="frameworks/native" remote="gzosp" />
+  <project groups="pdk" name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="gzosp" />
+  <project name="hardware_gzosp_interfaces" path="hardware/gzosp/interfaces" remote="gzosp" />
+  <project name="hardware_libhardware" path="hardware/libhardware" remote="gzosp" />
+  <project groups="pdk" name="hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="gzosp" />
+  <project groups="pdk" name="hardware_ril" path="hardware/ril" remote="gzosp" />
+  <project groups="pdk-fs" name="packages_apps_Camera2" path="packages/apps/Camera2" remote="gzosp" />
+  <project groups="pdk-fs" name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
+  <project groups="pdk-fs" name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="gzosp" />
+  <project groups="apps_nfc,pdk-fs" name="packages_apps_Nfc" path="packages/apps/Nfc" remote="gzosp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="gzosp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="gzosp" />
+  <project groups="pdk-cw-fs,pdk-fs" name="packages_services_Telephony" path="packages/services/Telephony" remote="gzosp" />
+  <project groups="pdk" name="system_bt" path="system/bt" remote="gzosp" />
+  <project groups="pdk" name="system_media" path="system/media" remote="gzosp" />
+  <project groups="pdk" name="system_nfc" path="system/nfc" remote="gzosp" />
+  <project groups="pdk" name="system_sepolicy" path="system/sepolicy" remote="gzosp" />
+  <project groups="pdk" name="system_vold" path="system/vold" remote="gzosp" />
 </manifest>

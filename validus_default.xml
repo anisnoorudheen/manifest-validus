@@ -5,11 +5,11 @@
            fetch="https://github.com" />
 
   <remote  name="gzosp"
-           fetch="https://github.com/GZOSP" />  
+           fetch="https://github.com/GZOSP" />
 
   <remote  name="val"
-           fetch="https://github.com/ValidusOs" />  
-  
+           fetch="https://github.com/ValidusOs" />
+
   <default revision="8.0"
            remote="val"
            sync-f="true"
@@ -62,6 +62,7 @@
   <project groups="pdk" name="hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="gzosp" />
   <project groups="pdk" name="hardware_ril" path="hardware/ril" remote="gzosp" />
   <project groups="pdk-fs" name="packages_apps_Camera2" path="packages/apps/Camera2" remote="gzosp" />
+  <project groups="pdk-fs" path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="gzosp" />
   <project groups="pdk-fs" name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
   <project groups="pdk-fs" name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="gzosp" />
   <project groups="apps_nfc,pdk-fs" name="packages_apps_Nfc" path="packages/apps/Nfc" remote="gzosp" />

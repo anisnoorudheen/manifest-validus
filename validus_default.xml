@@ -16,6 +16,7 @@
            sync-c="true"
            sync-j="8" />
 
+  <!-- Validus -->
   <project name="manifest" path="manifest" remote="val" />
   <project name="build" path="build/make" remote="val">
     <copyfile dest="Makefile" src="core/root.mk" />
@@ -31,14 +32,18 @@
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
+
   <project name="bionic" path="bionic" remote="val" />
+  <project name="frameworks_base" path="frameworks/base" remote="val" />
   <project name="hardware_interfaces" path="hardware/interfaces" remote="val" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
   <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />
   <project name="system_core" path="system/core" remote="val" />
   <project name="vendor_validus" path="vendor/validus" remote="val" />
+
+  <!-- GZOSP -->
   <project name="bootable_recovery" path="bootable/recovery" remote="gzosp" />
-  <project path="development" name="development" remote="gzosp" />
+  <project name="development" path="development" remote="gzosp" />
   <project name="device_gzosp_sepolicy" path="device/gzosp/sepolicy" remote="gzosp" />
   <project name="external_connectivity" path="external/connectivity" remote="gzosp" />
   <project name="external_ebtables" path="external/ebtables" remote="gzosp" />
@@ -55,7 +60,6 @@
   <project name="external_toybox" path="external/toybox" remote="gzosp" />
   <project name="external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="gzosp" />
   <project name="frameworks_av" path="frameworks/av" remote="gzosp" />
-  <project name="frameworks_base" path="frameworks/base" remote="val" />
   <project name="frameworks_native" path="frameworks/native" remote="gzosp" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="gzosp" />
   <project name="hardware_gzosp_interfaces" path="hardware/gzosp/interfaces" remote="gzosp" />
@@ -63,7 +67,7 @@
   <project name="hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="gzosp" />
   <project name="hardware_ril" path="hardware/ril" remote="gzosp" />
   <project name="packages_apps_Camera2" path="packages/apps/Camera2" remote="gzosp" />
-  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="gzosp" />
+  <project name="packages_apps_DeskClock" path="packages/apps/DeskClock" remote="gzosp" />
   <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
   <project name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="gzosp" />
   <project name="packages_apps_Nfc" path="packages/apps/Nfc" remote="gzosp" />

@@ -39,6 +39,7 @@
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="val" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
   <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />
+  <project name="packages_services_OmniJaws" path="packages/services/OmniJaws"  remote="val" />
   <project name="system_core" path="system/core" remote="val" />
   <project name="vendor_validus" path="vendor/validus" remote="val" />
 

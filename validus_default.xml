@@ -36,6 +36,7 @@
   <project name="bionic" path="bionic" remote="val" />
   <project name="frameworks_base" path="frameworks/base" remote="val" />
   <project name="hardware_interfaces" path="hardware/interfaces" remote="val" />
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer"  remote="val" />
   <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="val" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
   <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />

@@ -81,6 +81,7 @@
   <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
   <project name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="gzosp" />
   <project name="packages_apps_Nfc" path="packages/apps/Nfc" remote="gzosp" />
+  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
   <project name="packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="gzosp" />
   <project name="packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="gzosp" />
   <project name="packages_services_Telephony" path="packages/services/Telephony" remote="gzosp" />

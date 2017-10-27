@@ -34,10 +34,13 @@
   </project>
 
   <project name="bionic" path="bionic" remote="val" />
+  <project name="development" path="development" remote="val" />
   <project name="frameworks_base" path="frameworks/base" remote="val" />
+  <project name="frameworks_native" path="frameworks/native" remote="val" />
+  <project name="frameworks_support" path="frameworks/support" remote="val" />
   <project name="hardware_interfaces" path="hardware/interfaces" remote="val" />
   <project name="packages_apps_Dialer" path="packages/apps/Dialer"  remote="val" />
-  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="val" />
+  <project name="packages_apps_Messaging" path="packages/apps/Messaging" remote="val" />
   <project name="packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="val" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
   <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />
@@ -51,7 +54,6 @@
 
   <!-- GZOSP -->
   <project name="bootable_recovery" path="bootable/recovery" remote="gzosp" />
-  <project name="development" path="development" remote="gzosp" />
   <project name="device_gzosp_sepolicy" path="device/gzosp/sepolicy" remote="gzosp" />
   <project name="external_connectivity" path="external/connectivity" remote="gzosp" />
   <project name="external_ebtables" path="external/ebtables" remote="gzosp" />
@@ -68,9 +70,8 @@
   <project name="external_toybox" path="external/toybox" remote="gzosp" />
   <project name="external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="gzosp" />
   <project name="frameworks_av" path="frameworks/av" remote="gzosp" />
-  <project name="frameworks_native" path="frameworks/native" remote="gzosp" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="gzosp" />
-  <project path="hardware/gzosp/interfaces" name="hardware_gzosp_interfaces" remote="gzosp" >
+  <project name="hardware_gzosp_interfaces" path="hardware/gzosp/interfaces" remote="gzosp" >
       <copyfile dest="hardware/gzosp/Android.bp" src="Android.bp"/>
   </project>
   <project name="hardware_libhardware" path="hardware/libhardware" remote="gzosp" />
@@ -81,7 +82,7 @@
   <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
   <project name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="gzosp" />
   <project name="packages_apps_Nfc" path="packages/apps/Nfc" remote="gzosp" />
-  <project path="packages/apps/PackageInstaller" name="packages_apps_PackageInstaller" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
+  <project name="packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="gzosp" />
   <project name="packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="gzosp" />
   <project name="packages_providers_TelephonyProvider" path="packages/providers/TelephonyProvider" remote="gzosp" />
   <project name="packages_services_Telephony" path="packages/services/Telephony" remote="gzosp" />

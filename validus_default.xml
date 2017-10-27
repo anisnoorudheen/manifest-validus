@@ -43,6 +43,7 @@
   <project name="packages_apps_Messaging" path="packages/apps/Messaging" remote="val" />
   <project name="packages_apps_OmniStyle" path="packages/apps/OmniStyle" remote="val" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="val" />
+  <project name="packages_apps_SlimRecents" path="packages/apps/SlimRecents" remote="val" />
   <project name="packages_apps_WolvesDen" path="packages/apps/WolvesDen" remote="val" />
   <project name="packages_services_OmniJaws" path="packages/services/OmniJaws"  remote="val" />
   <project name="packages_services_Telecomm" path="packages/services/Telecomm" remote="val" />

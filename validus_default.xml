@@ -78,6 +78,7 @@
   <project name="hardware_libhardware" path="hardware/libhardware" remote="gzosp" />
   <project name="hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="gzosp" />
   <project name="hardware_ril" path="hardware/ril" remote="gzosp" />
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
   <project name="packages_apps_Camera2" path="packages/apps/Camera2" remote="gzosp" />
   <project name="packages_apps_DeskClock" path="packages/apps/DeskClock" remote="gzosp" />
   <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />

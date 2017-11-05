@@ -50,9 +50,6 @@
   <project name="system_core" path="system/core" remote="val" />
   <project name="vendor_validus" path="vendor/validus" remote="val" />
 
-  <!-- Themes -->
-  <project name="interfacer" path="packages/apps/ThemeInterfacer" remote="val" />
-
   <!-- GZOSP -->
   <project name="bootable_recovery" path="bootable/recovery" remote="gzosp" />
   <project name="device_gzosp_sepolicy" path="device/gzosp/sepolicy" remote="gzosp" />

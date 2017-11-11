@@ -63,6 +63,7 @@
   <project name="external_libnfc-nxp" path="external/libnfc-nxp" remote="gzosp" />
   <project name="external_mksh" path="external/mksh" remote="gzosp" />
   <project name="external_nano" path="external/nano" remote="gzosp" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="gzosp" />
   <project name="external_tinycompress" path="external/tinycompress" remote="gzosp" />
   <project name="external_selinux" path="external/selinux" remote="gzosp" />
   <project name="external_toybox" path="external/toybox" remote="gzosp" />

@@ -63,21 +63,21 @@
   <project name="external_libnfc-nxp" path="external/libnfc-nxp" remote="gzosp" />
   <project name="external_mksh" path="external/mksh" remote="gzosp" />
   <project name="external_nano" path="external/nano" remote="gzosp" />
-  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="gzosp" />
+  <project name="external_skia" path="external/skia" remote="gzosp" />
   <project name="external_tinycompress" path="external/tinycompress" remote="gzosp" />
   <project name="external_selinux" path="external/selinux" remote="gzosp" />
   <project name="external_toybox" path="external/toybox" remote="gzosp" />
   <project name="external_wpa_supplicant_8" path="external/wpa_supplicant_8" remote="gzosp" />
   <project name="frameworks_av" path="frameworks/av" remote="gzosp" />
   <project name="frameworks_opt_telephony" path="frameworks/opt/telephony" remote="gzosp" />
-  <project path="hardware/broadcom/libbt" name="hardware_broadcom_libbt" groups="pdk" remote="gzosp" />
+  <project name="hardware_broadcom_libbt" path="hardware/broadcom/libbt" remote="gzosp" />
   <project name="hardware_gzosp_interfaces" path="hardware/gzosp/interfaces" remote="gzosp" >
       <copyfile dest="hardware/gzosp/Android.bp" src="Android.bp"/>
   </project>
   <project name="hardware_libhardware" path="hardware/libhardware" remote="gzosp" />
   <project name="hardware_libhardware_legacy" path="hardware/libhardware_legacy" remote="gzosp" />
   <project name="hardware_ril" path="hardware/ril" remote="gzosp" />
-  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="gzosp" />
+  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="gzosp" />
   <project name="packages_apps_Camera2" path="packages/apps/Camera2" remote="gzosp" />
   <project name="packages_apps_DeskClock" path="packages/apps/DeskClock" remote="gzosp" />
   <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="gzosp" />
@@ -89,7 +89,7 @@
   <project name="packages_services_Telephony" path="packages/services/Telephony" remote="gzosp" />
   <project name="system_bt" path="system/bt" remote="gzosp" />
   <project name="system_media" path="system/media" remote="gzosp" />
-  <project path="system/hwservicemanager" name="system_hwservicemanager" groups="pdk" remote="gzosp" />
+  <project name="system_hwservicemanager" path="system/hwservicemanager" remote="gzosp" />
   <project name="system_nfc" path="system/nfc" remote="gzosp" />
   <project name="system_sepolicy" path="system/sepolicy" remote="gzosp" />
   <project name="system_vold" path="system/vold" remote="gzosp" />

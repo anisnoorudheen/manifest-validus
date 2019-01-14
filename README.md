@@ -1,7 +1,9 @@
 VALIDUS
 ========
 
-To initialize your local repository, use this command:
+To initialize your local repository; with possibly broken wolves, use this command:
 
-	repo init -u https://github.com/ValidusOs/manifest.git -b 9.0
+	repo init -u https://github.com/ValidusOs/manifest.git -b test
+
+if u can't fix it; then sync 9.0 branch :p
 

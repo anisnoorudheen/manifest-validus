@@ -32,18 +32,20 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
-  <project path="bionic" name="bionic" remote="val" />
-  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="val" />
+  <!-- repos in test branch -->
+  <project path="bionic" name="bionic" remote="test" />
   <project path="frameworks/base" name="frameworks_base" remote="val" revision="test" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="val" revision="test" />
+  <project path="packages/apps/WolvesDen" name="packages_apps_WolvesDen" remote="val" revision="test" />
+  <project path="vendor/validus" name="vendor_validus" remote="val" revision="test" />
+
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="val" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="val" />
   <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="val" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="val" />  
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="val" revision="test" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="val" />
-  <project path="packages/apps/WolvesDen" name="packages_apps_WolvesDen" remote="val" revision="test" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="val" />  
   <project path="system/core" name="system_core" groups="pdk" remote="val" />
-  <project path="vendor/validus" name="vendor_validus" remote="val" revision="test" />
 
   <project path="packages/apps/SmartNav" name="packages_apps_SmartNav" remote="val" />
   <project path="packages/apps/SmartNavSettings" name="packages_apps_SmartNavSettings" remote="val" />

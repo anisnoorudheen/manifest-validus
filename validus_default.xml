@@ -10,6 +10,9 @@
   <remote  name="val"
            fetch="https://github.com/ValidusOs" />
 
+  <remote  name="test"
+           fetch="https://github.com/ValidusOs" />
+
   <default revision="9.0"
            remote="val"
            sync-f="true"

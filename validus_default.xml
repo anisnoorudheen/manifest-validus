@@ -41,6 +41,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="val" revision="test" />
   <project path="packages/apps/WolvesDen" name="packages_apps_WolvesDen" remote="val" revision="test" />
   <project path="vendor/validus" name="vendor_validus" remote="val" revision="test" />
+  <project path="frameworks/opt/jamesdsp" name="frameworks_opt_jamesdsp" remote="val" revision="test" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="val" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="val" />

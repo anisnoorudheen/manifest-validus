@@ -46,6 +46,7 @@
   <project path="packages/apps/DSPManager" name="packages_apps_DSPManager" remote="val" revision="test" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="val" revision="test" />
   <project name="packages_services_OmniJaws" path="packages/services/OmniJaws" remote="val" revision="9.0" />
+  <project path="packages/apps/WeatherClient" name="packages_apps_WeatherClient" remote="val" revision="test" />
 
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="val" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="val" />
